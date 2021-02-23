@@ -25,5 +25,18 @@ module.exports = function(app) {
       console.log('response : ' + response);
       res.status(200).json(response);
    });  // end of get
+
+   app.get('/userid', function (req, res) {
+      //res.render('about.html');
+      console.log('listall...');
+      const getNumber = req.body.getNumber;
+      let response = {
+            'name': 'onekpride',
+            'address': '서귀포 동홍동'
+      }
+      
+      console.log('response : ' + response);
+      res.status(200).json(response);
+   });  // end of get
      
 }
